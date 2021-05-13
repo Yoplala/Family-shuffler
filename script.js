@@ -1,7 +1,8 @@
 
 const citation = document.getElementById('citation');
-const answer = document.getElementById('answer')
+const answer = document.getElementById('answer-text')
 const butt = document.getElementById('butt');
+const btnCopy = document.getElementById('copy');
 
 /* ---=== Fisher–Yates shuffle ===--- */
 // https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle#The_modern_algorithm
@@ -29,8 +30,12 @@ butt.addEventListener('click', function() {
     }
 });
 
-
-
+/* ---=== Copier dans le presse-papier ===--- */
+btnCopy.addEventListener('click', function(){
+	answer.select();
+	document.execCommand('copy');
+} );
+// Fonctionnalité obsolète, voir Clipboard API pour une solution moderne !
 
 
 
