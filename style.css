@@ -1,0 +1,49 @@
+
+/* ---=== Variables ===--- */
+:root {
+    --main-color: black;
+    --second-color: white;
+}
+
+/* ---=== Fonts ===--- */
+@font-face {
+    font-family: 'Luciole';
+    src: url('Fonts/Luciole-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Luciole-Bold';
+    src: url('Fonts/Luciole-Bold.ttf') format('truetype');
+}
+
+/* ---=== General ===--- */
+body {
+    text-align: center;
+    margin-top: 8%;
+    font-family: 'Luciole';
+}
+
+h1 {
+    font-family: 'Luciole-Bold';
+}
+
+#form, #answer {
+    margin-top: 5%;
+}
+
+#form div {
+    margin: 2%;
+}
+
+#citation, #butt {
+    font-family: 'Luciole';
+}
+
+#citation {
+    width: 80%;
+}
+
+#butt {
+    border-radius: 30px;
+    height: 2.5rem;
+    width: 10rem;
+}
