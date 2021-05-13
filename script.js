@@ -15,13 +15,14 @@ function shuffle(a) {
 
 /* ---=== On click ===--- */
 butt.addEventListener('click', function() {
-    if (!citation.value.includes(' ')) {
-        const el = citation.value.split('');
+    const textToShuffle = citation.value ? citation.value : citation.placeholder;
+    if (!textToShuffle.includes(' ')) {
+        const el = textToShuffle.split('');
         shuffle(el);
         const el2 = el.join('');
         answer.textContent = el2;
     } else {
-        const el = citation.value.split(' ');
+        const el = textToShuffle.split(' ');
         shuffle(el);
         const el2 = el.join(' ');
         answer.textContent = el2;
